@@ -1,0 +1,75 @@
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Height of the fixed header */
+}
+
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+}
+
+@keyframes cheColors {
+  0% {
+    filter: brightness(1) sepia(0.5) hue-rotate(0deg) saturate(1.5);
+  }
+  33% {
+    filter: brightness(1.2) sepia(0.8) hue-rotate(320deg) saturate(2); /* Rouge révolutionnaire */
+  }
+  66% {
+    filter: brightness(1.1) sepia(0.7) hue-rotate(80deg) saturate(1.8); /* Vert militaire */
+  }
+  100% {
+    filter: brightness(1) sepia(0.5) hue-rotate(0deg) saturate(1.5);
+  }
+}
+
+.che-color-shift {
+  animation: cheColors 12s infinite ease-in-out;
+}
+
+@keyframes cheRevolution {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.che-animation {
+  animation: cheRevolution 10s infinite ease-in-out, cheColors 12s infinite ease-in-out;
+}
