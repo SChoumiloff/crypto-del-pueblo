@@ -1,0 +1,12 @@
+# Bloquer tous les robots
+User-agent: *
+Disallow: /
+
+# Bloquer un robot spécifique
+User-agent: Googlebot
+Disallow: /dossier-privé/
+
+# Autoriser certaines pages uniquement
+User-agent: *
+Allow: /public/
+Disallow: /

@@ -31,21 +31,21 @@ export const About: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="about-content grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-righteous text-[#FFE66D] mb-6">
+            <h2 className="text-3xl md:text-4xl font-righteous text-[#FFE66D] mb-6">
               À Propos de Crypto del Pueblo
             </h2>
-            <p className="text-[#4ECDC4] text-lg mb-6">
+            <p className="text-base md:text-lg text-[#4ECDC4] mb-6">
               Crypto del Pueblo est un token créé pour le plaisir et la camaraderie. 
               Sans prétention, il unit une communauté désireuse de partager des moments 
               légers et amusants dans l'univers des cryptomonnaies.
             </p>
-            <p className="text-white text-lg">
+            <p className="text-base md:text-lg text-white">
               Initié par "Crypto pour Tous", ce projet RUNE sur Bitcoin vise à rassembler 
               une communauté autour d'un concept ludique, sans prétention technique.
             </p>
           </div>
           <div className="relative group">
-            <CheLogo className="w-[500px] h-[500px] mx-auto che-animation" />
+            <CheLogo className="w-full max-w-[300px] md:max-w-[500px] h-auto mx-auto che-animation" />
           </div>
         </div>
       </div>

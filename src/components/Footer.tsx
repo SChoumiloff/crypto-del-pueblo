@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
               <a href="https://www.youtube.com/@cryptopourtous75" target='_blank' className="text-white hover:text-[#4ECDC4] transition-colors">
                 <Youtube size={24} />
               </a>
-              <a href="#" className="text-white hover:text-[#4ECDC4] transition-colors">
+              <a href="https://github.com/SChoumiloff/crypto-del-pueblo" target='_blank' className="text-white hover:text-[#4ECDC4] transition-colors">
                 <Github size={24} />
               </a>
             </div>
